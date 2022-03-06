@@ -116,7 +116,7 @@ When ClickHouse merges data parts, each group of consecutive rows with the same 
 
 For each resulting data part ClickHouse saves:
 
-1.  The first “cancel” and the last “state” rows, if the number of “state” and “cancel” rows matches and the last row is a “state” row.
+1.  The first “cancel” and the last “state” rows, if the number of “state” and “cancel” rows matches and the last row is a “cancel” row.
 2.  The last “state” row, if there are more “state” rows than “cancel” rows.
 3.  The first “cancel” row, if there are more “cancel” rows than “state” rows.
 4.  None of the rows, in all other cases.
